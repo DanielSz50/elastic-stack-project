@@ -1,0 +1,56 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "log.level": {
+          "type": "keyword"
+        },
+        "@timestamp": {
+          "type": "date"
+        },
+        "message": {
+          "type": "match_only_text"
+        },
+        "ecs.version": {
+          "type": "keyword"
+        },
+        "log.origin": {
+          "properties": {
+            "file.name": { "type": "keyword" },
+            "file.line":  { "type": "long" }
+          }
+        },
+        "client.ip": {
+          "type": "ip"
+        },
+        "http.request.method": {
+          "type": "keyword"
+        },
+        "url.path": {
+          "type": "wildcard"
+        },
+        "http.version": {
+          "type": "keyword"
+        },
+        "http.response.status_code": {
+          "type": "long"
+        },
+        "http.response.body.bytes": {
+          "type": "long"
+        },
+        "user_agent.original": {
+          "type": "keyword"
+        },
+        "error.message": {
+          "type": "match_only_text"
+        },
+        "event.duration": {
+          "type": "long"
+        },
+        "event.timezone": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}

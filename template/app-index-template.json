@@ -1,0 +1,13 @@
+{
+  "index_patterns": ["app-filebeat-*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 1
+    }
+  },
+  "composed_of": ["app_component_template"],
+  "version": 3,
+  "_meta": {
+    "description": "index template for gin logs from the app"
+  }
+}
