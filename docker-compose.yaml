@@ -114,7 +114,7 @@ services:
       - esdata04:/usr/share/elasticsearch/data
     environment:
       - node.name=es04
-      - node.roles=data,data_content,data_hot,data_warm,ingest,data_cold,data_frozen
+      - node.roles=data,data_content,data_hot,data_warm,ingest,data_cold
       - cluster.name=edu-cluster
       - discovery.seed_hosts=es01,es02,es03
       - bootstrap.memory_lock=true
@@ -145,7 +145,7 @@ services:
       - esdata05:/usr/share/elasticsearch/data
     environment:
       - node.name=es05
-      - node.roles=data,data_content,data_hot,data_warm,ingest,data_cold,data_frozen
+      - node.roles=data,data_content,data_hot,data_warm,ingest,data_cold
       - cluster.name=edu-cluster
       - discovery.seed_hosts=es01,es02,es03
       - bootstrap.memory_lock=true
