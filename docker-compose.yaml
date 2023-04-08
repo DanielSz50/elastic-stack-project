@@ -116,7 +116,6 @@ services:
       - node.name=es04
       - node.roles=data,data_content,data_hot,data_warm,ingest
       - cluster.name=edu-cluster
-      - cluster.initial_master_nodes=es01,es02,es03
       - discovery.seed_hosts=es01,es02,es03
       - bootstrap.memory_lock=true
       - xpack.security.enabled=false
@@ -148,7 +147,6 @@ services:
       - node.name=es05
       - node.roles=data_cold,data_frozen
       - cluster.name=edu-cluster
-      - cluster.initial_master_nodes=es01,es02,es03
       - discovery.seed_hosts=es01,es02,es03
       - bootstrap.memory_lock=true
       - xpack.security.enabled=false
